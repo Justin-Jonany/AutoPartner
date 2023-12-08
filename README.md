@@ -1,7 +1,9 @@
 # AutoPartner 🚘
 The main goal of this project is to create a blending algorithm with a twist of my own: a dense neural network (DNN), and to do it without any external libraries (i.e. no TensorFlow and no Scikit-Learn).
 
-Autopartner is a machine-learning model that can help a car salesperson predict the ideal price to sell. I used Scikit-learn, TensorFlow, Keras, Pandas, NumPy, and Matplotlib in this project. In this project, I first trained various Scikit-learn models and evaluated them. Afterward, I selected the best models to create a multi-layered perception (MLP). In the end, I created a blending algorithm that ensembles 4 models, and study them with DNN, managing to earn an error (MAPE) of 7,6%, better than the best performing scikit-learn ensemble model (Random Forest Regressor) of 11.6%.
+In this project, I first trained various Scikit-learn models and evaluated them. Afterward, I selected the best models to make it the base layer. Then, I studied their predictions with a linear regression, forming a multi-layered perceptron (MLP). However, I tried to improve, by instead of making it just an MLP, I thought of making it into a DNN. So, I decided to implement it without Scikit-Learn/TensorFlow/PyTorch.
+
+In the end, I created a blending algorithm that ensembles 4 models, and study them with DNN, managing to earn an error (MAPE) of 7,6%, better than the best performing scikit-learn ensemble model (Random Forest Regressor) of 11.6%.
 
 The image below displays the MAPE of several models
 ![image](https://drive.google.com/uc?export=view&id=1-5a_8IKvEam7R6wct5KADosHwBN6in2H)
